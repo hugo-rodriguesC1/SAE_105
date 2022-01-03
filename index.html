@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futuristic Love</title>
+</head>
+<body>
+
+    <header class="header">
+        
+        <button class="header__menu-btn menu-btn"
+                @click="menuOpen = ! menuOpen"
+                :class="menuOpen ? 'menu-btn--open' : ''">
+            <span class="menu-btn__bar"></span>
+        </button>
+
+        <nav class="header__menu menu"
+             :class="menuOpen ? 'menu--open' : ''">
+            <ul class="menu__list listUnstyled">
+                <li class="menu__item"><a class="menu__link" href="/"><h3 class="menu__title">Accueil</h3></a></li>
+                <li class="menu__item"><a class="menu__link" href="article1.html"><h3 class="menu__title">Transhumanisme et société</h3></a></li>
+                <li class="menu__item"><a class="menu__link" href="article2.html"><h3 class="menu__title">Un amour futuriste</h3></a></li>
+                <li class="menu__item"><a class="menu__link" href="article3.html"><h3 class="menu__title">L’homme-robot</h3></a></li>
+                <li class="menu__item"><a class="menu__link" href="contact.html"><h3 class="menu__title">Contact</h3></a></li>
+                <li class="menu__item"><a class="menu__link" href="about.html"><h3 class="menu__title">À propos</h3></a></li>
+            </ul>
+        </nav>
+
+        <div class="header__hero hero">
+            <img class="hero__logo" src="public/img/Logo_xl.webp" alt="Logo du site">
+            <h1 class="hero__title titleH">Futuristic <span class="titleH__variant">Love</span></h1>
+            <p class="hero__tagline">« Les sentiments sont ce qui diffèrent l’Homme de la machine »</p>
+            <div class="hero__swipe"></div>
+            <div class="hero__repere"></div>
+        </div>
+
+    </header>
+
+    <main>
+
+        <p class="introduction">Les machines sont de nos jours omniprésentes. Elles ont un réel impact sur notre société, nos relations et sur le corps humain de certaines personnes… Découvrez plusieurs aspects de la technologie au travers de ce site.</p>
+
+        <article class="article">
+            <h3 class="article__preTitle">le livre</h3>
+            <h2 class="article__title">Transhumanisme et société</h2>
+            <img class="article__img" src="public/img/Tweet_1.webp" alt="Couverture du livre 'Le Transhumanisme' de Béatrice Jousset-Couturier">
+            <p class="article__resume">Le transhumanisme prône l’usage des sciences afin d’améliorer l’espèce humaine, en augmentant sa performance physique et mentale.</p>
+            <button class="article__more button">En savoir plus</button>
+            <div class="line"></div>
+        </article>
+
+        <article class="article">
+            <h3 class="article__preTitle">le film</h3>
+            <h2 class="article__title">Un amour futuriste</h2>
+            <img class="article__img" src="public/img/Tweet_2.webp" alt="Visuel du film 'Her' de Spike Jonze">
+            <p class="article__resume">Her est un film de science-fiction réalisé par Spike Jonze, racontant l’histoire amoureuse entre un homme et une intelligence artificielle.</p>
+            <button class="article__more button">En savoir plus</button>
+            <div class="line"></div>
+        </article>
+
+        <article class="article">
+            <h3 class="article__preTitle">l'utilité</h3>
+            <h2 class="article__title">L'Homme-Robot</h2>
+            <img class="article__img" src="public/img/Tweet_3.webp" alt="Une poignée de main entre un robot et un humain">
+            <p class="article__resume">La vision bionique en passant par les organes artificiels… Nombreuses sont les améliorations qui sont réalisables sur le corps humain.</p>
+            <button class="article__more button">En savoir plus</button>
+        </article>
+    </main>
+
+    <footer class="footer">
+
+        <p class="footer__author">PierrePolJ</p>
+        <a class="footer__mailto" href="mailto:pierrepolj@gmail.com">PierrePolJ@gmail.com</a>
+        <img class="footer__logoS" src="public/img/MMi_logo_s.webp" alt="Logo MMI">
+        <p class="footer__mention">Projet réalisé dans le cadre d’un exercice pédagogique au sein du département MMI de Montbéliard</p>
+
+    </footer>
+    
+</body>
+</html>
