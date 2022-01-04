@@ -1,0 +1,35 @@
+.about {
+    color: var(--w);
+    text-align: center;
+    margin-bottom: 0%;
+    position: absolute;
+    top: 15.4vh;
+}
+
+.about__title {
+    font: bold var(--h1) var(--font--barlow);
+    letter-spacing: -2.5px;
+    line-height: 2.7rem;
+    padding: 0 1.12rem;
+    margin-bottom: 8.4vh;
+}
+
+.about__intro {
+    font: var(--body) var(--font--mulish);
+    letter-spacing: -1px;
+    margin-bottom: 3.7vh;
+}
+
+.about__swipe {
+    position: absolute;
+    top: 48.5vh;
+    left: 45.3%;
+}
+
+.about__img {
+    margin-bottom: 4.8vh;
+}
+
+
+
+
