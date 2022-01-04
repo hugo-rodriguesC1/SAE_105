@@ -1,0 +1,33 @@
+.form {
+    margin-top: 4.6vh;
+}
+
+.form__input {
+    width: 89.3vw;
+    height: 3.75vh;
+    margin-bottom: 2.5vh;
+    background: none;
+    border-color: var(--w);
+}
+
+.form__input::placeholder {
+    font: var(--body) var(--font--mulish);
+    color: var(--w);
+    letter-spacing: -1px;
+}
+
+.form__input:nth-child(8) {
+    height: 20.8vh;
+}
+
+.form__button {
+    margin: auto;
+    width: 53vw;
+    height: 6.4vh;
+    background: linear-gradient(to right,var(--gradient1),var(--gradient2));
+    border: 2px solid var(--r);
+    color: var(--w);
+    font: 500 var(--button) var(--font--barlow);
+    text-transform: uppercase;
+}
+

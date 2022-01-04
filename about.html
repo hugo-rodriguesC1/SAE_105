@@ -12,16 +12,26 @@
 
     <header class="header">
 
-        <a class="header__link" href="/">
-            <h4 class="header__title title">Futuristic <span class="title__variant">Love</span></h4>
-            <img class="header__img" src="public/img/Logo_s.webp" alt="Logo du site">
-        </a>
-
-        <button class="header__menu-btn menu-btn"
-                @click="menuOpen = ! menuOpen"
-                :class="menuOpen ? 'menu-btn--open' : ''">
-            <span class="menu-btn__bar"></span>
-        </button>
+        <div class="header__top top">
+            
+            <div class="top__start">
+                <a class="header__link" href="/">
+                    <h4 class="header__title title">Futuristic <br> <span class="title__variant">Love</span></h4></a>
+            </div>
+            
+            <div class="top__mid">
+                <a href="/">
+                    <img class="header__img" src="public/img/Logo_s.webp" alt="Logo du site"></a>
+            </div>
+            
+            <div class="top__end">
+                <button class="header__menuA-btn menu-btnA"
+                        @click="menuOpen = ! menuOpen"
+                        :class="menuOpen ? 'menu-btnA--open' : ''">
+                    <span class="menu-btnA__bar"></span>
+                </button>
+            </div>
+        </div>
 
         <nav class="header__menu menu"
              :class="menuOpen ? 'menu--open' : ''">
@@ -35,64 +45,89 @@
             </ul>
         </nav>
 
-        <h1 class="header__titleA">À propos</h1>
-        <p class="header__intro">Ce site internet a été réalisé dans le cadre d’un exercie pédagogique au sein du département MMi de Montbéliard.</p>
-        <img src="public/img/MMI_logo_xl.webp" alt="Logo MMI">
-        <button class="header__button">En savoir plus</button>
-        <div class="hero__swipe"></div>
-        <div class="hero__repere"></div>
+        <div class="about">
+            <h1 class="about__title">À propos</h1>
+            <p class="about__intro">Ce site internet a été réalisé dans le cadre d’un exercie pédagogique au sein du département MMi de Montbéliard.</p>
+            <img class="about__img" src="public/img/MMI_logo_xl.webp" alt="Logo MMI">
+            <div class="button">
+                <a class="button__link" href="mmimontbeliard.fr">en savoir plus</a>
+            </div>
+            <a href="#repere">
+                <div class="hero__swipe about__swipe"></div>
+            </a>
+            <div class="hero__repere" id="repere"></div>
+        </div>
 
     </header>
 
     <main>
 
-        <h2>Projets similaires</h2>
+        <h2 class="article__title">Projets similaires</h2>
+        
         <div class="OP">
-            <img class="OP__imgLeft" src="public/img/OP_1.webp" alt="Affiche du film La ligne verte">
-            <img class="OP__imgRight" src="public/img/OP_2.webp" alt="Affiche du film La ligne verte">
+            <div class="OP__img">
+                <div class="OP__imgLeft"><img src="public/img/OP_1.webp" alt="Affiche du film La ligne verte"></div>
+                <div class="OP__imgRight"><img src="public/img/OP_2.webp" alt="Affiche du film La ligne verte"></div>
+            </div>
             <p class="OP__title">Dead line</p>
-            <button class="OP__button">En savoir plus</button>
-            <div class="line"></div>
+            <div class="OP__button also__button">
+                <a href="#" class="OP__link">En savoir plus</a></div>
+            <div class="OP__line line"></div>
         </div>
 
         <div class="OP">
-            <img class="OP__imgLeft" src="public/img/OP_3.webp" alt="Affiche du film American History X">
-            <img class="OP__imgRight" src="public/img/OP_4.webp" alt="Affiche du film Skinhead">
+            <div class="OP__img">
+                <div class="OP__imgLeft"><img src="public/img/OP_3.webp" alt="Affiche du film American History X"></div>
+                <div class="OP__imgRight"><img src="public/img/OP_4.webp" alt="Affiche du film Skinhead"></div>
+            </div>
             <p class="OP__title">Skins</p>
-            <button class="OP__button">En savoir plus</button>
-            <div class="line"></div>
+            <div class="OP__button also__button">
+                <a href="#" class="OP__link">En savoir plus</a></div>
+            <div class="OP__line line"></div>
         </div>
 
         <div class="OP">
-            <img class="OP__imgLeft" src="public/img/OP_5.webp" alt="Affiche du film Death Note">
-            <img class="OP__imgRight" src="public/img/OP_6.webp" alt="Affiche du film Avengers Infinity War">
+            <div class="OP__img">
+                <div class="OP__imgLeft"><img src="public/img/OP_5.webp" alt="Affiche du film Death Note"></div>
+                <div class="OP__imgRight"><img src="public/img/OP_6.webp" alt="Affiche du film Avengers Infinity War"></div>
+            </div>
             <p class="OP__title">Caedere</p>
-            <button class="OP__button">En savoir plus</button>
-            <div class="line"></div>
+            <div class="OP__button also__button">
+                <a href="#" class="OP__link">En savoir plus</a></div>
+            <div class="OP__line line"></div>
         </div>
 
         <div class="OP">
-            <img class="OP__imgLeft" src="public/img/OP_7.webp" alt="Affiche du film Thérese Raquin">
-            <img class="OP__imgRight" src="public/img/OP_8.webp" alt="Affiche du film Meutre Alcatraz">
+            <div class="OP__img">
+                <div class="OP__imgLeft"><img src="public/img/OP_7.webp" alt="Affiche du film Thérese Raquin"></div>
+                <div class="OP__imgRight"><img src="public/img/OP_8.webp" alt="Affiche du film Meutre Alcatraz"></div>
+            </div>
             <p class="OP__title">Pourquoi tuer ?</p>
-            <button class="OP__button">En savoir plus</button>
-            <div class="line"></div>
+            <div class="OP__button also__button">
+                <a href="#" class="OP__link">En savoir plus</a></div>
+            <div class="OP__line line"></div>
         </div>
 
         <div class="OP">
-            <img class="OP__imgLeft" src="public/img/OP_9.webp" alt="Affiche du film L'univers des singes'">
-            <img class="OP__imgRight" src="public/img/OP_10.webp" alt="Affiche du film Chimpanzés">
+            <div class="OP__img">
+                <div class="OP__imgLeft"><img src="public/img/OP_9.webp" alt="Affiche du film L'univers des singes"></div>
+                <div class="OP__imgRight"><img src="public/img/OP_10.webp" alt="Affiche du film Chimpanzés"></div>
+            </div>
             <p class="OP__title">La vie des singes</p>
-            <button class="OP__button">En savoir plus</button>
-            <div class="line"></div>
+            <div class="OP__button also__button">
+                <a href="#" class="OP__link">En savoir plus</a></div>
+            <div class="OP__line line"></div>
         </div>
 
         <div class="OP">
-            <img class="OP__imgLeft" src="public/img/OP_11.webp" alt="Affiche du film La Hunger Games">
-            <img class="OP__imgRight" src="public/img/OP_12.webp" alt="Affiche du film La Hunger Games">
+            <div class="OP__img">
+                <div class="OP__imgLeft"><img src="public/img/OP_11.webp" alt="Affiche du film Hunger Games"></div>
+                <div class="OP__imgRight"><img src="public/img/OP_12.webp" alt="Affiche du film Hunger Games"></div>
+            </div>
             <p class="OP__title">Le monde d'Hunger Games</p>
-            <button class="OP__button">En savoir plus</button>
-            <div class="line"></div>
+            <div class="OP__button also__button">
+                <a href="#" class="OP__link">En savoir plus</a></div>
+            <div class="OP__line line"></div>
         </div>
 
     </main>

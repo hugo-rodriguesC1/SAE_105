@@ -1,15 +1,31 @@
 .text__title {
-
+    font: bold var(--subtitle) var(--font--barlow);
+    color: var(--r);
+    letter-spacing: -1.3px;
+    margin-top: 1.4375rem;
 }
 
 .text__paragraphe {
-
+    font: var(--body) var(--font--mulish);
+    letter-spacing: -1px;
+    margin-top: 1.4375rem;
 }
 
 .text__legend {
-
+    text-align: center;
+    font: italic lighter var(--legend) var(--font--mulish);
+    letter-spacing: -1px;
+    margin-top: 1.0625rem;
 }
 
 .text__quote {
+    font: italic var(--body) var(--font--mulish);
+    color: var(--r);
+    letter-spacing: -1px;
+    margin-top: 1.4375rem;
+}
 
+.text__img {
+    text-align: center;
+    margin-top: 1.4375rem;
 }

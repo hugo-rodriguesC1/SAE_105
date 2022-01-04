@@ -1,0 +1,29 @@
+.contact {
+    color: var(--w);
+    text-align: center;
+    margin-bottom: 0%;
+    position: absolute;
+    top: 10.5vh;
+}
+
+.contact__title {
+    font: bold var(--h1) var(--font--barlow);
+    letter-spacing: -2.5px;
+    line-height: 2.7rem;
+    padding: 0 1.12rem;
+    margin-bottom: 2.6vh;
+}
+
+.contact__intro {
+    font: var(--h2) var(--font--mulish);
+    letter-spacing: -2px;
+}
+
+.contact__main {
+    margin: 0;
+}
+
+.contact__footer {
+    margin: 0;
+}
+

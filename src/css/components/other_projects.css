@@ -1,0 +1,43 @@
+.OP {
+    text-align: center;
+}
+
+.OP__img {
+    display: flex;
+}
+
+.OP__imgLeft,
+.OP__imgRight {
+    border: 1px solid var(--w);
+}
+
+.OP__imgLeft {
+    border-radius: 20px 0 0 20px;
+}
+
+.OP__imgRight {
+    border-radius: 0 20px 20px 0;
+}
+
+.OP__title {
+    font: var(--body) var(--font--mulish);
+}
+
+.OP__button {
+    margin-bottom: 4.9vh;
+}
+
+.OP__link {
+    text-align: center;
+    margin: auto;
+    color: var(--w);
+    font: 500 var(--body) var(--font--mulish);
+    letter-spacing: -1px;
+    text-transform: uppercase;
+}
+
+.OP__line {
+    margin-top: 0;
+    margin-bottom: 6.3vh;
+}
+

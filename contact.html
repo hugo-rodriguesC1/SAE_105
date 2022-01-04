@@ -10,18 +10,28 @@
 </head>
 <body>
     
-    <header class="header">
+    <header class="header headerContact">
 
-        <a class="header__link" href="/">
-            <h4 class="header__title title">Futuristic <span class="title__variant">Love</span></h4>
-            <img class="header__img" src="public/img/Logo_s.webp" alt="Logo du site">
-        </a>
-
-        <button class="header__menu-btn menu-btn"
-                @click="menuOpen = ! menuOpen"
-                :class="menuOpen ? 'menu-btn--open' : ''">
-            <span class="menu-btn__bar"></span>
-        </button>
+        <div class="header__top top">
+            
+            <div class="top__start">
+                <a class="header__link" href="/">
+                    <h4 class="header__title title">Futuristic <br> <span class="title__variant">Love</span></h4></a>
+            </div>
+            
+            <div class="top__mid">
+                <a href="/">
+                    <img class="header__img" src="public/img/Logo_s.webp" alt="Logo du site"></a>
+            </div>
+            
+            <div class="top__end">
+                <button class="header__menuA-btn menu-btnA"
+                        @click="menuOpen = ! menuOpen"
+                        :class="menuOpen ? 'menu-btnA--open' : ''">
+                    <span class="menu-btnA__bar"></span>
+                </button>
+            </div>
+        </div>
 
         <nav class="header__menu menu"
              :class="menuOpen ? 'menu--open' : ''">
@@ -37,11 +47,12 @@
 
     </header>
 
-    <main>
+    <main class="contact__main">
 
         <div class="contact">
-            <h1 class="contact__title">L’Homme-Robot</h1>
-            <p class="contact__intro">Le corps humain 2.0</p>
+            <h1 class="contact__title">Contact</h1>
+            <p class="contact__intro">Une question ? Un avis ? N’hésitez
+                pas à nous contacter !</p>
             <form action="" class="contact__form form">
                 <label for="nom" class="form__title"></label>
                 <input type="text" id="nom" class="form__input" placeholder="Nom">
@@ -51,14 +62,14 @@
                 <input type="text" id="subject" class="form__input" placeholder="Sujet">
                 <label for="comment" class="form__title"></label>
                 <textarea name="comment" id="comment" cols="30" rows="6" class="form__input" placeholder="Votre message..."></textarea>
-                <input type="button" class="form__button" value="Envoyer">
+                <input type="submit" class="form__button" value="Envoyer">
             </form>
 
         </div>
 
     </main>
 
-    <footer class="footer">
+    <footer class="footer contact__footer">
 
         <p class="footer__author">PierrePolJ</p>
         <div class="footer__cadre"><a class="footer__mailto" href="mailto:pierrepolj@gmail.com">PierrePolJ@gmail.com</a></div>

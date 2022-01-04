@@ -1,0 +1,37 @@
+.also {
+    margin-top: 5.4vh;
+}
+
+.also__intro {
+    text-align: center;
+    font: bold var(--subtitle) var(--font--barlow);
+    color: var(--r);
+    letter-spacing: -1.3px;
+    margin-top: 1.4375rem;
+    margin-bottom: 7.1vh;
+    padding: 0 var(--legend);
+}
+
+.also__img {
+    text-align: center;
+    margin-bottom: 7.1vh;
+}
+
+.also__button {
+    margin: auto;
+    width: 43.7vw;
+    height: 6.4vh;
+    background: linear-gradient(to right,var(--gradient1),var(--gradient2));
+    display: flex;
+    align-items: center;
+    border: 2px solid var(--r);
+    margin-bottom: 7.1vh;
+}
+
+.also__article {
+    text-align: center;
+    margin: auto;
+    color: var(--w);
+    font: 300 var(--body) var(--font--mulish);
+    letter-spacing: -1px;
+}
