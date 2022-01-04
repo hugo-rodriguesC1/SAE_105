@@ -1,12 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Futuristic Love - L’Homme-Robot</title>
+    <link rel="stylesheet" href="src/css/style.css">
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
 </head>
 <body>
+
+    <header class="header">
+
+        <a class="header__link" href="/">
+            <h4 class="header__title title">Futuristic <span class="title__variant">Love</span></h4>
+            <img class="header__img" src="public/img/Logo_s.webp" alt="Logo du site">
+        </a>
+
+        <button class="header__menu-btn menu-btn"
+                @click="menuOpen = ! menuOpen"
+                :class="menuOpen ? 'menu-btn--open' : ''">
+            <span class="menu-btn__bar"></span>
+        </button>
+
+        <nav class="header__menu menu"
+             :class="menuOpen ? 'menu--open' : ''">
+            <ul class="menu__list listUnstyled">
+                <li class="menu__item"><a class="menu__link" href="/"><h3 class="menu__title">Accueil</h3></a></li>
+                <li class="menu__item"><a class="menu__link" href="article1.html"><h3 class="menu__title">Transhumanisme et société</h3></a></li>
+                <li class="menu__item"><a class="menu__link" href="article2.html"><h3 class="menu__title">Un amour futuriste</h3></a></li>
+                <li class="menu__item"><a class="menu__link" href="article3.html"><h3 class="menu__title">L’homme-robot</h3></a></li>
+                <li class="menu__item"><a class="menu__link" href="contact.html"><h3 class="menu__title">Contact</h3></a></li>
+                <li class="menu__item"><a class="menu__link" href="about.html"><h3 class="menu__title">À propos</h3></a></li>
+            </ul>
+        </nav>
+
+        <h1 class="header__titleA">L’Homme-Robot</h1>
+        <p class="header__subTitleA">Her, une love story imaginée par Spike Jonze</p>
+        <img src="public/img/Hand_shake.webp" alt="Une poignée de main entre un humain et un robot">
+        <div class="hero__swipe"></div>
+        <div class="hero__repere"></div>
+
+    </header>
+
+    <main>
+
+        <div class="text">
+            <h3 class="text__title">Les prothèses cybernétiques</h3>
+            <p class="text__paragraphe">Elles sont les plus visibles et les plus utiles pour l’Homme à l’heure actuelle. Ces prothèses viennent pallier à un handicap moteur : la perte d’un bras, ou d’une jambe par exemple. Pendant longtemps, de simples prothèses étaient posées sur les membres amputés. Celles-ci étaient souvent gênantes. La science travaille d’arrache-pied pour les rendre plus utiles, plus légères ou simplement plus jolies. Ces dernières années d’importantes innovations ont été apportées aux prothèses : L’objectif est de rendre à la personne sa validité en passant par la robotique. Nombreuses sont les vidéos virales mettant en scène des bras et des jambes mécaniques popularisées par des personnalités comme le tristement célèbre Oscar Pistorius.</p>
+            <img src="public/img/A3_run.webp" alt="Oscar Pistorius lors d’une course">
+            <p class="text__legend">Oscar Pistorius lors d’une course</p>
+            <h3 class="text__title">La vision bionique</h3>
+            <p class="text__paragraphe">Plusieurs systèmes de caméra se sont développés : L’argus 2 qui dès 2015 a fait grand bruit puisqu’il a permis à une centaine de personnes de retrouver partiellement la vue. “Ses yeux” sont en fait une petite caméra reliée au nerf optique. Celui-ci a la charge de transmettre les informations visuelles. Des électrodes vont alors venir stimuler les cellules rétiniennes encore viables. Le système est fonctionnel mais largement perfectible. Il permet cependant aux personnes malvoyantes de distinguer des formes et des lumières.</p>
+            <img class="text__img" src="public/img/A3_argus.webp" alt="L’Argus 2">
+            <p class="text__legend">L’Argus 2</p>
+            <p class="text__paragraphe">D’autres objets permettent d’augmenter sa vue initiale. Les Google Glass en sont un exemple. Elles permettent d’avoir en réalité augmentée une surcouche de données à sa propre vue, dans son quotidien. Elles donnent par exemple le nom des restaurants à proximité, le nom des avenues etc... Elle nécessitent cependant d’être portées.</p>
+            <p class="text__paragraphe">Ce n’est pas le cas des lentilles bionique amovibles permettant le même effet à défaut de s’amputer un oeil pour le remplacer par un plus performant...</p>
+            <h3 class="text__title">Les organes artificiels</h3>
+            <p class="text__paragraphe">Les organes ont une fonction et sont en symbiose avec l’ensemble du corps humain. Il est difficile de les remplacer sans provoquer de rejets au même titre que les greffes. Plusieurs solutions sont cependant tentés :</p>
+            <p class="text__paragraphe">-Pancréas artificiels pour les personnes diabétiques et censés réguler le taux d’insuline.</p>
+            <img class="text__img" src="public/img/A3_pancreas.webp" alt="Pancréas artificiel">
+            <p class="text__legend">Pancréas artificiel</p>
+            <p class="text__paragraphe">-Vessies artificielles qui dans les faits existent depuis déjà un bon moment. Le seul problème restant est la sensation de vessie pleine qui permettrait de jauger quand uriner.</p>
+            <p class="text__paragraphe">Les grosses avancées sont du côté des reins. Les reins artificiels sont d’actualité. L’idée est de réduire le systeme de dialyse sous forme d’organe fonctionnel agissant comme un vrai rein. C’est à dire filtrant le sang et le nettoyant de toutes toxines. Le coup de maître est dans la conception en elle-même de ce rein : deux compartiments, un pour extraire les petites molécules et l’autre capable de renvoyer le sang avec de bons nutriments dans tout l’organisme.</p>
+            <p class="text__paragraphe">Enormément d’améliorations sont désormais disponibles pour le corps humain. Certaines d’entre elles sont prête à l’utilisation et d’autres nécessitent d’être encore étudiées.</p>
+        </div>
+
+        <div class="line"></div>
+        
+        <div class="also">
+            <h3 class="also__intro">Si vous avez aimé cet article vous aimerez aussi...</h3>
+            <img src="public/img/Also_2.webp" alt="Affiche 'Her'">
+            <a href="article3.html">Un amour futuriste</a>
+            <img src="public/img/Also_3.webp" alt="Couverture du livre 'Le Transhumanisme' de Béatrice Jousset-Couturier">
+            <a href="article2.html">Transhumanisme et société</a>
+        </div>
+
+    </main>
     
     <footer class="footer">
 

@@ -5,9 +5,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Futuristic Love - Contact</title>
+    <link rel="stylesheet" href="src/css/style.css">
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
 </head>
 <body>
     
+    <header class="header">
+
+        <a class="header__link" href="/">
+            <h4 class="header__title title">Futuristic <span class="title__variant">Love</span></h4>
+            <img class="header__img" src="public/img/Logo_s.webp" alt="Logo du site">
+        </a>
+        
+        <button class="header__menu-btn menu-btn"
+                @click="menuOpen = ! menuOpen"
+                :class="menuOpen ? 'menu-btn--open' : ''">
+            <span class="menu-btn__bar"></span>
+        </button>
+
+        <nav class="header__menu menu"
+             :class="menuOpen ? 'menu--open' : ''">
+            <ul class="menu__list listUnstyled">
+                <li class="menu__item"><a class="menu__link" href="/"><h3 class="menu__title">Accueil</h3></a></li>
+                <li class="menu__item"><a class="menu__link" href="article1.html"><h3 class="menu__title">Transhumanisme et société</h3></a></li>
+                <li class="menu__item"><a class="menu__link" href="article2.html"><h3 class="menu__title">Un amour futuriste</h3></a></li>
+                <li class="menu__item"><a class="menu__link" href="article3.html"><h3 class="menu__title">L’homme-robot</h3></a></li>
+                <li class="menu__item"><a class="menu__link" href="contact.html"><h3 class="menu__title">Contact</h3></a></li>
+                <li class="menu__item"><a class="menu__link" href="about.html"><h3 class="menu__title">À propos</h3></a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <div class="contact">
+            <h1 class="contact__title">L’Homme-Robot</h1>
+            <p class="contact__intro">Le corps humain 2.0</p>
+            <form action="" class="contact__form form">
+                <label for="nom" class="form__title"></label>
+                <input type="text" id="nom" class="form__input" placeholder="Nom">
+                <label for="prenom" class="form__title"></label>
+                <input type="email" id="prenom" class="form__input" placeholder="Prénom">
+                <label for="subject" class="form__title"></label>
+                <input type="text" id="subject" class="form__input" placeholder="Sujet">
+                <label for="comment" class="form__title"></label>
+                <textarea name="comment" id="comment" cols="30" rows="6" class="form__input" placeholder="Votre message..."></textarea>
+                <input type="button" class="form__button" value="Envoyer">
+            </form>
+
+        </div>
+
+    </main>
+
     <footer class="footer">
 
         <p class="footer__author">PierrePolJ</p>

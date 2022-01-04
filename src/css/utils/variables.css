@@ -1,0 +1,32 @@
+:root {
+/* Color styles */
+--b: #2C2929;
+--w: #FFFFFF;
+--r: #E23048;
+--gradient1: #CC2574;
+--gradient2: #FB3C0D;
+
+/* Text-size styles */
+/* base size: body--txt (16px) */
+
+--logo--l: 4.94rem;
+--logo--m: 4rem;
+--menu: 1.88rem;
+--button: 1.12rem;
+
+--subtitle: 1.25rem;
+--body: 1rem;
+--legend: 0.88rem;
+
+--h1: 2.88rem;
+--h2: 1.44rem;
+
+/* Fonts */
+
+--font--barlow: 'Barlow';
+--font--mulish: 'Mulish';
+
+/* Spaces */
+
+--space: 26px
+}

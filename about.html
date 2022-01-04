@@ -5,14 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Futuristic Love - À propos</title>
+    <link rel="stylesheet" href="src/css/style.css">
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
 </head>
 <body>
 
     <header class="header">
 
-        <h4 class="header__title title">Futuristic <span class="title__variant">Love</span></h4>
-        <img class="header__img" src="public/img/Logo_s.webp" alt="Logo du site">
-
+        <a class="header__link" href="/">
+            <h4 class="header__title title">Futuristic <span class="title__variant">Love</span></h4>
+            <img class="header__img" src="public/img/Logo_s.webp" alt="Logo du site">
+        </a>
+        
         <button class="header__menu-btn menu-btn"
                 @click="menuOpen = ! menuOpen"
                 :class="menuOpen ? 'menu-btn--open' : ''">
@@ -31,14 +35,67 @@
             </ul>
         </nav>
 
-        <h1 class="header__titleA">Transhumanisme et société</h1>
-        <p class="header__subTitleA">Un courant de pensée pas toujours apprécié</p>
-        <img src="public/img/Face_left.webp" alt="Visage humain de profil">
-        <img src="public/img/Face_right.webp" alt="Visage robotique de profil">
+        <h1 class="header__titleA">À propos</h1>
+        <p class="header__intro">Ce site internet a été réalisé dans le cadre d’un exercie pédagogique au sein du département MMi de Montbéliard.</p>
+        <img src="public/img/MMI_logo_xl.webp" alt="Logo MMI">
+        <button class="header__button">En savoir plus</button>
         <div class="hero__swipe"></div>
         <div class="hero__repere"></div>
 
     </header>
+
+    <main>
+
+        <h2>Projets similaires</h2>
+        <div class="OP">
+            <img class="OP__imgLeft" src="public/img/OP_1.webp" alt="Affiche du film La ligne verte">
+            <img class="OP__imgRight" src="public/img/OP_2.webp" alt="Affiche du film La ligne verte">
+            <p class="OP__title">Dead line</p>
+            <button class="OP__button">En savoir plus</button>
+            <div class="line"></div>
+        </div>
+
+        <div class="OP">
+            <img class="OP__imgLeft" src="public/img/OP_3.webp" alt="Affiche du film American History X">
+            <img class="OP__imgRight" src="public/img/OP_4.webp" alt="Affiche du film Skinhead">
+            <p class="OP__title">Skins</p>
+            <button class="OP__button">En savoir plus</button>
+            <div class="line"></div>
+        </div>
+
+        <div class="OP">
+            <img class="OP__imgLeft" src="public/img/OP_5.webp" alt="Affiche du film Death Note">
+            <img class="OP__imgRight" src="public/img/OP_6.webp" alt="Affiche du film Avengers Infinity War">
+            <p class="OP__title">Caedere</p>
+            <button class="OP__button">En savoir plus</button>
+            <div class="line"></div>
+        </div>
+
+        <div class="OP">
+            <img class="OP__imgLeft" src="public/img/OP_7.webp" alt="Affiche du film Thérese Raquin">
+            <img class="OP__imgRight" src="public/img/OP_8.webp" alt="Affiche du film Meutre Alcatraz">
+            <p class="OP__title">Pourquoi tuer ?</p>
+            <button class="OP__button">En savoir plus</button>
+            <div class="line"></div>
+        </div>
+
+        <div class="OP">
+            <img class="OP__imgLeft" src="public/img/OP_9.webp" alt="Affiche du film L'univers des singes'">
+            <img class="OP__imgRight" src="public/img/OP_10.webp" alt="Affiche du film Chimpanzés">
+            <p class="OP__title">La vie des singes</p>
+            <button class="OP__button">En savoir plus</button>
+            <div class="line"></div>
+        </div>
+
+        <div class="OP">
+            <img class="OP__imgLeft" src="public/img/OP_11.webp" alt="Affiche du film La Hunger Games">
+            <img class="OP__imgRight" src="public/img/OP_12.webp" alt="Affiche du film La Hunger Games">
+            <p class="OP__title">Le monde d'Hunger Games</p>
+            <button class="OP__button">En savoir plus</button>
+            <div class="line"></div>
+        </div>
+
+    </main>
 
     <footer class="footer">
 

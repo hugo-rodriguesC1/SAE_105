@@ -5,8 +5,89 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Futuristic Love - Un amour futuriste</title>
+    <link rel="stylesheet" href="src/css/style.css">
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
 </head>
 <body>
+
+    <header class="header">
+
+        <a class="header__link" href="/">
+            <h4 class="header__title title">Futuristic <span class="title__variant">Love</span></h4>
+            <img class="header__img" src="public/img/Logo_s.webp" alt="Logo du site">
+        </a>
+        
+        <button class="header__menu-btn menu-btn"
+                @click="menuOpen = ! menuOpen"
+                :class="menuOpen ? 'menu-btn--open' : ''">
+            <span class="menu-btn__bar"></span>
+        </button>
+
+        <nav class="header__menu menu"
+             :class="menuOpen ? 'menu--open' : ''">
+            <ul class="menu__list listUnstyled">
+                <li class="menu__item"><a class="menu__link" href="/"><h3 class="menu__title">Accueil</h3></a></li>
+                <li class="menu__item"><a class="menu__link" href="article1.html"><h3 class="menu__title">Transhumanisme et société</h3></a></li>
+                <li class="menu__item"><a class="menu__link" href="article2.html"><h3 class="menu__title">Un amour futuriste</h3></a></li>
+                <li class="menu__item"><a class="menu__link" href="article3.html"><h3 class="menu__title">L’homme-robot</h3></a></li>
+                <li class="menu__item"><a class="menu__link" href="contact.html"><h3 class="menu__title">Contact</h3></a></li>
+                <li class="menu__item"><a class="menu__link" href="about.html"><h3 class="menu__title">À propos</h3></a></li>
+            </ul>
+        </nav>
+
+        <h1 class="header__titleA">Un amour futuriste</h1>
+        <p class="header__subTitleA">Her, une love story imaginée par Spike Jonze</p>
+        <img src="public/img/Her_visual.webp" alt="Illustration du film 'Her' ">
+        <div class="hero__swipe"></div>
+        <div class="hero__repere"></div>
+
+    </header>
+
+    <main>
+
+        <div class="text">
+            <img class="text__img" src="public/img/A2_trailer.webp" alt="Image du trailer de 'Her'">
+            <h3 class="text__title">Synopsis</h3>
+            <p class="text__paragraphe">er est un film de science-fiction américain, réalisé par Spike Jonze en 2014. Le film se passe dans un futur proche et raconte l’histoire de Théodore Twombly : un homme sensible au caractère complexe qui a du mal à se faire à sa rupture amoureuse. Il se procure alors un programme informatique ultra-perfectionné , et personnalisable. Il active alors Samantha qui s’adapte à la personnalité de Théodore. Plus le temps passe, Samantha et Théodore font plus ample connaissance... Leurs désirs et leur besoins évoluent au fil du temps et ils finissent par tomber amoureux l’un de l’autre.</p>
+            <img src="public/img/A2_cam.webp" alt="Spike Jonze sur le tournage du film">
+            <p class="text__legend">Spike Jonze sur le tournage du film</p>
+            <h3 class="text__title">Un monde aseptisé</h3>
+            <p class="text__paragraphe">Au début du long métrage il est indiqué que l’histoire se passe à Los Angeles, grande métropole où les interactions humaines se font rares. Beaucoup de scènes se situent dans une ville à l’esthétique aseptisée, très propre et très blanche. Les différents plans montrent un environnement urbain qui s’étend à perte de vue. Spike Jonze nous invite à voir Los Angeles comme une ville inhumaine. On y suit le personnage principal, Théodore, qui est majoritairement seul et toujours au centre de l’image. Il rentre chez lui ou se rend à son travail. Il semble absent et abandonné dans cette société où les gens ne se regardent plus et n’échangent plus. Le protagoniste est équipé d’une oreillette tout comme les figurants. Il écoute de la musique, consulte ses mails sans chercher d’interactions. Il suit la foule d’employés de bureau qui font des va- et vient sans s’adresser la parole.</p>
+            <img class="text__img" src="public/img/A2_bus.webp" alt="Extrait du film illustrant la societé du film Her">
+            <p class="text__legend">Extrait du film illustrant la societé du film Her</p>
+            <h3 class="text__title">Un changement</h3>
+            <p class="text__paragraphe">Cette solitude pousse Théodore à se procurer OS1.. Il s’agit d’un logiciel ultra-perfectionné qui l’aide à réaliser des tâches diverses mais surtout qui s’adapte à la personnalité de son utilisateur. Lors de l’installation du logiciel, l’OS pose des questions tels que :</p>
+            <q class="text__quote">Voulez-vous une voix d’homme ou de femme ?</q>
+            <q class="text__quote">Quel était la relation avec votre mère ?</q>
+            <img class="text__img" src="public/img/A2_os.webp" alt="OS1 lors de la configuration">
+            <p class="text__legend">OS1 lors de la configuration</p>
+            <p class="text__paragraphe">Il choisit alors la voix d’une femme et explique que sa mère ne parlait que d’elle et ne s’intéressait pas à lui. L’OS prend en compte ses réponses et nait Samantha. Elle va alors s’enquérir de lui, s’occuper de lui et se soucier de lui... Les désirs et les besoins de Samantha et Théodore évoluent au fil du temps et ils finissent par tomber amoureux l’un de l’autre.</p>
+            <img src="public/img/A2_symbol.webp" alt="Image de l'évolution des symboles liés à leur relation">
+            <h3 class="text__title">L’indépendance</h3>
+            <p class="text__paragraphe">Le temps passe et leur histoire d’amour suit son cour. Tout se passe à merveille jusqu’à ce que Samantha commence à prendre des initiatives et s’émancipe. Théodore aimerait qu’elle soit tout à son service. Elle devient cependant peu à peu un sujet émancipé à part entière. Elle a ses propres centres d’intérêts, d‘autres relations et des aspirations propres. La distance s’instaure peu à peu quand Théodore trouve que Samantha n’est plus tout à fait à sa place...</p>
+            <p class="text__paragraphe">Le jour où, occupée ailleurs, l’OS ne répond pas à son appel : il panique, change d’appareil pour tenter de se connecter, quitte le travail en catastrophe. Il se précipite à son domicile, trébuche mais il continue à appeler indéfinemment.</p>
+            <img class="text__img" src="public/img/A2_appel.webp" alt="L’OS lors des appels">
+            <p class="text__paragraphe">Lorsqu’elle prend enfin l’appel, il la presse de confirmer ses doutes. Samantha reconnaît ne plus être exclusive. Elle aurait 641 autres histoires d’amour. L’ingrate infidèle ! Leur histoire d’amour se termine. Théodore a pu oublier grâce à cette expérience son ancienne relation. Ce film illustre bel et bien le fait qu’on ne peut pas tout contrôler ni même une machine.</p>
+        </div>
+
+        <div class="carousel">
+            <div class="line"></div>
+            <h3 class="carousel__title">Films similaires</h3>
+            <img src="public/img/Carousel_1.webp" alt="Affiche l'Odyssée de l'espace">
+            <img src="public/img/Carousel_2.webp" alt="Affiche Alita battle angel">
+            <img src="public/img/Carousel_3.webp" alt="Affiche Transcendance">
+            <div class="line"></div>
+        </div>
+
+        <div class="also">
+            <h3 class="also__intro">Si vous avez aimé cet article vous aimerez aussi...</h3>
+            <img src="public/img/Also_1.webp" alt="Une main robotique serre une main humaine">
+            <a href="article2.html">L’homme-robot</a>
+            <img src="public/img/Also_3.webp" alt="Couverture du livre 'Le Transhumanisme' de Béatrice Jousset-Couturier">
+            <a href="article3.html">Transhumanisme et société</a>
+        </div>
+
+    </main>
     
     <footer class="footer">
 

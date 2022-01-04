@@ -1,0 +1,16 @@
+.hero {
+    position: absolute;
+    top: 17.5vh;
+    left: 0;
+    text-align: center;
+    color: var(--w);
+}
+
+.hero__title {
+    font: lighter var(--logo--m) var(--font--barlow);
+    letter-spacing: 2px;
+}
+
+.titleH__variant {
+    font: 350 var(--logo--l) var(--font--barlow);
+}
