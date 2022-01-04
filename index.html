@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" x-data="{ menuOpen: false}" :class="menuOpen && 'noscroll'">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -34,8 +34,10 @@
             <img class="hero__logo" src="public/img/Logo_xl.webp" alt="Logo du site">
             <h1 class="hero__title titleH">Futuristic <br> <span class="titleH__variant">Love</span></h1>
             <p class="hero__tagline">« Les sentiments sont ce qui diffèrent l’Homme de la machine »</p>
-            <div class="hero__swipe"></div>
-            <div class="hero__repere"></div>
+            <a href="#repere">
+                <div class="hero__swipe"></div>
+            </a>
+            <div class="hero__repere" id="repere"></div>
         </div>
 
     </header>
@@ -49,7 +51,8 @@
             <h2 class="article__title">Transhumanisme et société</h2>
             <img class="article__img" src="public/img/Tweet_1.webp" alt="Couverture du livre 'Le Transhumanisme' de Béatrice Jousset-Couturier">
             <p class="article__resume">Le transhumanisme prône l’usage des sciences afin d’améliorer l’espèce humaine, en augmentant sa performance physique et mentale.</p>
-            <button class="article__more button">En savoir plus</button>
+            <div class="article__more button">
+                <a class="button__link" href="article1.html">En savoir plus</a></div>
             <div class="line"></div>
         </article>
 
@@ -58,7 +61,8 @@
             <h2 class="article__title">Un amour futuriste</h2>
             <img class="article__img" src="public/img/Tweet_2.webp" alt="Visuel du film 'Her' de Spike Jonze">
             <p class="article__resume">Her est un film de science-fiction réalisé par Spike Jonze, racontant l’histoire amoureuse entre un homme et une intelligence artificielle.</p>
-            <button class="article__more button">En savoir plus</button>
+            <div class="article__more button">
+                <a class="button__link" href="article2.html">En savoir plus</a></div>
             <div class="line"></div>
         </article>
 
@@ -67,15 +71,15 @@
             <h2 class="article__title">L'Homme-Robot</h2>
             <img class="article__img" src="public/img/Tweet_3.webp" alt="Une poignée de main entre un robot et un humain">
             <p class="article__resume">La vision bionique en passant par les organes artificiels… Nombreuses sont les améliorations qui sont réalisables sur le corps humain.</p>
-            <button class="article__more button">En savoir plus</button>
-        </article>
+            <div class="article__more button">
+                <a class="button__link" href="article3.html">En savoir plus</a></div>
     </main>
 
     <footer class="footer">
 
         <p class="footer__author">PierrePolJ</p>
-        <a class="footer__mailto" href="mailto:pierrepolj@gmail.com">PierrePolJ@gmail.com</a>
-        <img class="footer__logoS" src="public/img/MMi_logo_s.webp" alt="Logo MMI">
+        <div class="footer__cadre"><a class="footer__mailto" href="mailto:pierrepolj@gmail.com">PierrePolJ@gmail.com</a></div>
+        <div class="footer__logoS"><img src="public/img/MMi_logo_s.webp" alt="Logo MMI"></div>
         <p class="footer__mention">Projet réalisé dans le cadre d’un exercice pédagogique au sein du département MMI de Montbéliard</p>
 
     </footer>

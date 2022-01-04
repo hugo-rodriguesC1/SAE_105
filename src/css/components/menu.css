@@ -5,8 +5,130 @@
     position: fixed;
     display: flex;
     position: fixed;
+    width: 100%;
+    height: 100%;
     top: 0; bottom: 0;
     left: 0; right: 0;
-    background-color: #ffd4c5;
+    background: linear-gradient(var(--gradient1),var(--gradient2));
+    clip-path: unset;
     transition: all .4s ease-in-out;
+    z-index: 11;
+}
+
+.menu--open {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+.menu__list {
+    margin-top: 20vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menu__item {
+    text-align: center;
+}
+
+.menu__title {
+    font-family: var(--font--barlow);
+    font-weight: 100;
+    font-size: var(--menu);
+    letter-spacing: -2px;
+}
+
+.menu__link {
+    color: var(--w);
+}
+
+.menu-btn {
+    background: none;
+    width: 35px;
+    -webkit-appearance: none;
+    appearance: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    position: relative;
     }
+    
+.menu-btn__bar,
+.menu-btn__bar::before,
+.menu-btn__bar::after {
+    content:"";
+    width: 100%;
+    height: 4px;
+    background-color: var(--w);
+    position: absolute;
+    left: 0;
+    transition: all .4s ease-in-out;
+}
+
+.menu-btn__bar::before {
+    top: -10px;
+}
+  
+.menu-btn__bar::after {
+    top: 10px;
+}
+  
+.menu-btn--open .menu-btn__bar,
+.menu-btn--open .menu-btn__bar::before,
+.menu-btn--open .menu-btn__bar::after {
+    transform: rotate(135deg);
+    background-color: var(--w);
+    z-index: 12;
+}
+  
+.menu-btn--open .menu-btn__bar::before,
+.menu-btn--open .menu-btn__bar::after {
+    transform: rotate(90deg);
+    top: 0;
+}
+
+
+.menu-btnA {
+    background: none;
+    width: 35px;
+    -webkit-appearance: none;
+    appearance: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    position: relative;
+    }
+    
+.menu-btnA__bar,
+.menu-btnA__bar::before,
+.menu-btnA__bar::after {
+    content:"";
+    width: 100%;
+    height: 4px;
+    background-color: var(--w);
+    position: absolute;
+    left: 0;
+    transition: all .4s ease-in-out;
+}
+
+.menu-btnA__bar::before {
+    top: -10px;
+}
+  
+.menu-btnA__bar::after {
+    top: 10px;
+}
+  
+.menu-btnA--open .menu-btnA__bar,
+.menu-btnA--open .menu-btnA__bar::before,
+.menu-btnA--open .menu-btnA__bar::after {
+    transform: rotate(135deg);
+    background-color: var(--w);
+    z-index: 12;
+}
+  
+.menu-btnA--open .menu-btnA__bar::before,
+.menu-btnA--open .menu-btnA__bar::after {
+    transform: rotate(90deg);
+    top: 0;
+}

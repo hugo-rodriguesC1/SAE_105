@@ -1,0 +1,56 @@
+/* Hero alternatif pour pages articles */
+
+.heroA {
+    color: var(--w);
+    text-align: center;
+}
+
+.heroA__title {
+    font: bold var(--h1) var(--font--barlow);
+    letter-spacing: -2.5px;
+    line-height: 2.7rem;
+    padding: 0 1.12rem;
+    margin-bottom: 2.6vh;
+}
+
+.heroA__subTitle {
+    font: var(--h2) var(--font--mulish);
+    letter-spacing: -2px;
+}
+
+.heroA__faceLeft,
+.heroA__faceRight,
+.heroA__her,
+.heroA__handShake {
+    position: absolute;
+    z-index: 10;
+}
+
+.heroA__faceLeft {
+    top: 28.8vh;
+    left: 0;
+}
+
+.heroA__faceRight {
+    top: 35.2vh;
+    right: 0;
+}
+
+.heroA__her {
+    top: 34vh;
+    left: 1.6vw;
+}
+
+.heroA__handShake {
+    left: 0;
+    top: 36vh;
+}
+
+.heroA__swipe {
+    position: absolute;
+    top: 64vh;
+    left: 45.3%;
+}
+
+
+

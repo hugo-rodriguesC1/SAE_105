@@ -14,5 +14,29 @@ a {
     text-decoration: none;
 }
 
-p {
+body {
+    background-color: var(--b);
+    margin: 0;
+}
+
+main {
+    margin-left: var(--space);
+    margin-right: var(--space);
+    color: var(--w);
+    margin-top: 20vh;
+}
+
+.introduction {
+    text-align: center;
+    font: var(--body) var(--font--mulish);
+    letter-spacing: -1px;
+    margin-bottom: 8.7vh;
+}
+
+.line {
+    margin: auto;
+    width: 66vw;
+    height: 1px;
+    background-color: var(--w);
+    margin-top: 6.9vh;
 }

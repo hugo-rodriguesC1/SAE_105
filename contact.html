@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr" x-data="{ menuOpen: false}" :class="menuOpen && 'noscroll'">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,7 +16,7 @@
             <h4 class="header__title title">Futuristic <span class="title__variant">Love</span></h4>
             <img class="header__img" src="public/img/Logo_s.webp" alt="Logo du site">
         </a>
-        
+
         <button class="header__menu-btn menu-btn"
                 @click="menuOpen = ! menuOpen"
                 :class="menuOpen ? 'menu-btn--open' : ''">
@@ -61,8 +61,8 @@
     <footer class="footer">
 
         <p class="footer__author">PierrePolJ</p>
-        <a class="footer__mailto" href="mailto:pierrepolj@gmail.com">PierrePolJ@gmail.com</a>
-        <img class="footer__logoS" src="public/img/MMi_logo_s.webp" alt="Logo du site">
+        <div class="footer__cadre"><a class="footer__mailto" href="mailto:pierrepolj@gmail.com">PierrePolJ@gmail.com</a></div>
+        <div class="footer__logoS"><img src="public/img/MMi_logo_s.webp" alt="Logo MMI"></div>
         <p class="footer__mention">Projet réalisé dans le cadre d’un exercice pédagogique au sein du département MMI de Montbéliard</p>
 
     </footer>

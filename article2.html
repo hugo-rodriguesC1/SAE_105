@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" x-data="{ menuOpen: false}" :class="menuOpen && 'noscroll'">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,16 +12,26 @@
 
     <header class="header">
 
-        <a class="header__link" href="/">
-            <h4 class="header__title title">Futuristic <span class="title__variant">Love</span></h4>
-            <img class="header__img" src="public/img/Logo_s.webp" alt="Logo du site">
-        </a>
-        
-        <button class="header__menu-btn menu-btn"
-                @click="menuOpen = ! menuOpen"
-                :class="menuOpen ? 'menu-btn--open' : ''">
-            <span class="menu-btn__bar"></span>
-        </button>
+        <div class="header__top top">
+            
+            <div class="top__start">
+                <a class="header__link" href="/">
+                    <h4 class="header__title title">Futuristic <br> <span class="title__variant">Love</span></h4></a>
+            </div>
+            
+            <div class="top__mid">
+                <a href="/">
+                    <img class="header__img" src="public/img/Logo_s.webp" alt="Logo du site"></a>
+            </div>
+            
+            <div class="top__end">
+                <button class="header__menuA-btn menu-btnA"
+                        @click="menuOpen = ! menuOpen"
+                        :class="menuOpen ? 'menu-btnA--open' : ''">
+                    <span class="menu-btnA__bar"></span>
+                </button>
+            </div>
+        </div>
 
         <nav class="header__menu menu"
              :class="menuOpen ? 'menu--open' : ''">
@@ -35,11 +45,15 @@
             </ul>
         </nav>
 
-        <h1 class="header__titleA">Un amour futuriste</h1>
-        <p class="header__subTitleA">Her, une love story imaginée par Spike Jonze</p>
-        <img src="public/img/Her_visual.webp" alt="Illustration du film 'Her' ">
-        <div class="hero__swipe"></div>
-        <div class="hero__repere"></div>
+        <div class="header__heroA heroA">
+            <h1 class="heroA__title">Un amour futuriste</h1>
+            <p class="heroA__subTitle">Her, une love story imaginée par Spike Jonze</p>
+            <img class="heroA__her" src="public/img/Her_visual.webp" alt="Illustration du film 'Her' ">
+            <a href="#repere">
+                <div class="hero__swipe heroA__swipe"></div>
+            </a>
+            <div class="hero__repere" id="repere"></div>
+        </div>
 
     </header>
 
@@ -92,8 +106,8 @@
     <footer class="footer">
 
         <p class="footer__author">PierrePolJ</p>
-        <a class="footer__mailto" href="mailto:pierrepolj@gmail.com">PierrePolJ@gmail.com</a>
-        <img class="footer__logoS" src="public/img/MMi_logo_s.webp" alt="Logo du site">
+        <div class="footer__cadre"><a class="footer__mailto" href="mailto:pierrepolj@gmail.com">PierrePolJ@gmail.com</a></div>
+        <div class="footer__logoS"><img src="public/img/MMi_logo_s.webp" alt="Logo MMI"></div>
         <p class="footer__mention">Projet réalisé dans le cadre d’un exercice pédagogique au sein du département MMI de Montbéliard</p>
 
     </footer>

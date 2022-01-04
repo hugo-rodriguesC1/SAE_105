@@ -1,0 +1,39 @@
+.top {
+    padding: 0 var(--legend);
+    display: flex;    
+    justify-content: space-between;
+    align-items: start;
+}
+
+.top__start,
+.top__mid,
+.top__end {
+    display: flex;
+}
+
+.top__mid {
+    padding-top: var(--legend);
+}
+
+.title {
+    color: var(--w);
+    text-align: center;
+    font: lighter var(--subtitle) var(--font--barlow);
+    letter-spacing: 0.5px;
+    margin-top: 3vh;
+    line-height: 1vh;
+}
+
+.title__variant {
+    font: 350 1.56rem var(--font--barlow);
+    letter-spacing: 2px;
+}
+
+.top__mid {
+    position: absolute;
+    left: 43.5vw;
+}
+
+.top__end {
+    margin-top: 2.2rem;
+}

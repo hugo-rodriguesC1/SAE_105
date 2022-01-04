@@ -1,0 +1,16 @@
+.button {
+    margin: auto;
+    width: 53vw;
+    height: 6.4vh;
+    background: linear-gradient(to right,var(--gradient1),var(--gradient2));
+    display: flex;
+    align-items: center;
+    border: 2px solid var(--r);
+}
+
+.button__link {
+    margin: auto;
+    color: var(--w);
+    font: 500 var(--button) var(--font--barlow);
+    text-transform: uppercase;
+}

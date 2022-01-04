@@ -1,0 +1,22 @@
+.article__preTitle {
+    text-align: center;
+    font: italic 300 var(--menu) var(--font--barlow);
+}
+
+.article__title {
+    text-align: center;
+    color: var(--r);
+    font: bold var(--h1) var(--font--barlow);
+    letter-spacing: -3px;
+    line-height: 5.4vh;
+    margin-top: -4vh;
+    margin-bottom: 6.3vh;
+}
+
+.article__resume {
+    text-align: center;
+    font: var(--body) var(--font--mulish);
+    letter-spacing: -1px;
+    padding: 0% var(--menu);
+    margin: 6.9vh 0%;
+}
