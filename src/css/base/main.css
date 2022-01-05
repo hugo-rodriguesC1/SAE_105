@@ -40,3 +40,7 @@ main {
     background-color: var(--w);
     margin-top: 6.9vh;
 }
+
+.page404 {
+    text-align: center;
+}
