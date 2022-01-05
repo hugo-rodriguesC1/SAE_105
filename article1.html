@@ -7,6 +7,9 @@
     <title>Futuristic Love - Transhumanisme et société</title>
     <link rel="stylesheet" href="src/css/style.css">
     <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+    <script src="https://animejs.com/lib/anime.min.js"></script>
+    <script src="src/js/fonctions.js"></script>
+
 </head>
 <body>
     
@@ -64,7 +67,9 @@
             <h3 class="text__title">Qu’est-ce que le transhumanisme ?</h3>
             <p class="text__paragraphe">Le transhumanisme est apparu en Europe du Nord et aux Etats-Unis il y a plus de trente ans. Il s’agit d’un mouvement philosophique et scientifique. Ce mouvement prône l’usage des sciences et techniques dans le but d’améliorer l’espèce humaine. Cela permet d’augmenter les capacités de perception, de cognition, de réflexion et de performance.</p>
             <p class="text__paragraphe">C’est en 1957, au début de la cyberculture américaine que naît le mouvement quand Julian Huxley utilise pour la première fois le terme “transhumain”. Il définit par ce mot l’Homme voulant s’améliorer grâce à la science et la technologie.</p>
-            <div class="text__img">
+            <div class="text__img"
+                 @mouseover="montrerLegende();"
+                 @mouseleave="cacherLegende(), setTimeout('disparaitre()',200);">
                 <img src="public/img/A1_logo.webp" alt="Logo transhumaniste"></div>
             <p class="text__legend">Le symbole du courant transhumaniste</p>
             <h3 class="text__title">Les opposants au courant transhumaniste</h3>

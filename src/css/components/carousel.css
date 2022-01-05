@@ -1,0 +1,15 @@
+.carousel__container {
+    width: 272px;
+    height: 361px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+}

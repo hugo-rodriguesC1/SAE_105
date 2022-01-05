@@ -30,8 +30,17 @@
             </ul>
         </nav>
 
-        <div class="header__hero hero">
-            <img class="hero__logo" src="public/img/Logo_xl.webp" alt="Logo du site">
+        <div class="header__hero hero" x-data="{img1: true, img2: false}">
+            <div class="hero__logo"
+                 @click="img1 = !img1, img2 = !img2"
+                 x-show="img1">
+                <img src="public/img/Logo_xl.webp" alt="Logo du site">
+            </div>
+            <div class="hero__logoCaché"
+                 @click="img1 = !img1, img2 = !img2"
+                 x-show="img2">
+                <img src="public/img/MMI_logo_xl.webp" alt="Logo mmi">
+            </div>
             <h1 class="hero__title titleH">Futuristic <br> <span class="titleH__variant">Love</span></h1>
             <p class="hero__tagline">« Les sentiments sont ce qui diffèrent l’Homme de la machine »</p>
             <a href="#repere">

@@ -15,7 +15,9 @@
     text-align: center;
     font: italic lighter var(--legend) var(--font--mulish);
     letter-spacing: -1px;
-    margin-top: 1.0625rem;
+    /*margin-top: 1.0625rem;*/
+    margin-top: -1.3rem;
+    display: none;
 }
 
 .text__quote {

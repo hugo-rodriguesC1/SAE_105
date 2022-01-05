@@ -7,6 +7,8 @@
     <title>Futuristic Love - Un amour futuriste</title>
     <link rel="stylesheet" href="src/css/style.css">
     <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+    <script src="https://animejs.com/lib/anime.min.js"></script>
+    <script src="src/js/fonctions.js"></script>
 </head>
 <body>
 
@@ -89,12 +91,18 @@
 
         <div class="carousel">
             <div class="line"></div>
-            <h3 class="carousel__title">Films similaires</h3>
-            <img src="public/img/Carousel_1.webp" alt="Affiche l'Odyssée de l'espace">
-            <img src="public/img/Carousel_2.webp" alt="Affiche Alita battle angel">
-            <img src="public/img/Carousel_3.webp" alt="Affiche Transcendance">
+            <h3 class="carousel__title also__intro">Films similaires</h3>
+            <div class="carousel__container">
+                <div class="carousel__img imgalt"><img src="public/img/Carousel_1.webp" alt="Affiche l'Odyssée de l'espace"></div>
+                <div class="carousel__img imgalt"><img src="public/img/Carousel_2.webp" alt="Affiche Alita battle angel"></div>
+                <div class="carousel__img"><img src="public/img/Carousel_3.webp" alt="Affiche Transcendance"></div>
+            </div>
             <div class="line"></div>
         </div>
+
+        <script>
+            carousel()
+        </script>
 
         <div class="also">
             <h3 class="also__intro">Si vous avez aimé cet article vous aimerez aussi...</h3>
