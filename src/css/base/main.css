@@ -43,4 +43,6 @@ main {
 
 .page404 {
     text-align: center;
+    margin-right: auto;
+    margin-left: auto;
 }
