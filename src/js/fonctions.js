@@ -3,7 +3,7 @@ function montrerLegende(classe) {
     legend.style.display = 'block';
     return anime({
         targets: legend,
-        translateY: '2.3625rem',
+        translateY: '2rem',
         autoplay: false,
         easing: 'linear',
         duration: 200,
@@ -14,7 +14,7 @@ function cacherLegende() {
     let legend = document.querySelectorAll('.text__legend');
     return anime({
         targets: legend,
-        translateY: '-2.3625rem',
+        translateY: '-2rem',
         autoplay: false,
         easing: 'linear',
         duration: 200,

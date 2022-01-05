@@ -7,6 +7,8 @@
     <title>Futuristic Love - L’Homme-Robot</title>
     <link rel="stylesheet" href="src/css/style.css">
     <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+    <script src="https://animejs.com/lib/anime.min.js"></script>
+    <script src="src/js/fonctions.js"></script>
 </head>
 <body>
 
@@ -61,25 +63,31 @@
 
         <div class="text">
             <h3 class="text__title">Les prothèses cybernétiques</h3>
-            <p class="text__paragraphe">Elles sont les plus visibles et les plus utiles pour l’Homme à l’heure actuelle. Ces prothèses viennent pallier à un handicap moteur : la perte d’un bras, ou d’une jambe par exemple. Pendant longtemps, de simples prothèses étaient posées sur les membres amputés. Celles-ci étaient souvent gênantes. La science travaille d’arrache-pied pour les rendre plus utiles, plus légères ou simplement plus jolies. Ces dernières années d’importantes innovations ont été apportées aux prothèses : L’objectif est de rendre à la personne sa validité en passant par la robotique. Nombreuses sont les vidéos virales mettant en scène des bras et des jambes mécaniques popularisées par des personnalités comme le tristement célèbre Oscar Pistorius.</p>
-            <div class="text__img">
+            <p class="text__paragraphe">Elles sont les plus visibles et les plus utiles pour l’Homme à l’heure actuelle. Ces prothèses viennent pallier à un <span class="text__bold">handicap moteur</span> : la perte d’un bras, ou d’une jambe par exemple. Pendant longtemps, de simples prothèses étaient posées sur les membres amputés. Celles-ci étaient souvent gênantes. La science travaille d’arrache-pied pour les rendre plus utiles, plus légères ou simplement plus jolies. Ces dernières années d’importantes innovations ont été apportées aux prothèses : L’objectif est de <span class="text__bold">rendre à la personne sa validité en passant par la robotique</span>. Nombreuses sont les vidéos virales mettant en scène des bras et des jambes mécaniques popularisées par des personnalités comme le tristement célèbre Oscar Pistorius.</p>
+            <div class="text__img"
+            @mouseover="montrerLegende('leg1');"
+            @mouseleave="cacherLegende(), setTimeout('disparaitre()',200);">
                 <img src="public/img/A3_run.webp" alt="Oscar Pistorius lors d’une course"></div>
-            <p class="text__legend">Oscar Pistorius lors d’une course</p>
+            <p class="text__legend leg1">Oscar Pistorius lors d’une course</p>
             <h3 class="text__title">La vision bionique</h3>
-            <p class="text__paragraphe">Plusieurs systèmes de caméra se sont développés : L’argus 2 qui dès 2015 a fait grand bruit puisqu’il a permis à une centaine de personnes de retrouver partiellement la vue. “Ses yeux” sont en fait une petite caméra reliée au nerf optique. Celui-ci a la charge de transmettre les informations visuelles. Des électrodes vont alors venir stimuler les cellules rétiniennes encore viables. Le système est fonctionnel mais largement perfectible. Il permet cependant aux personnes malvoyantes de distinguer des formes et des lumières.</p>
-            <div class="text__img">
+            <p class="text__paragraphe">Plusieurs systèmes de caméra se sont développés : <span class="text__bold">L’argus 2</span> qui dès 2015 a fait grand bruit puisqu’il a permis à une centaine de personnes de retrouver partiellement la vue. “Ses yeux” sont en fait une petite caméra reliée au nerf optique. Celui-ci a la charge de transmettre les informations visuelles. Des électrodes vont alors venir stimuler les cellules rétiniennes encore viables. Le système est fonctionnel mais largement perfectible. Il permet cependant aux personnes malvoyantes de distinguer des formes et des lumières.</p>
+            <div class="text__img"
+            @mouseover="montrerLegende('leg2');"
+            @mouseleave="cacherLegende(), setTimeout('disparaitre()',200);">
                 <img src="public/img/A3_argus.webp" alt="L’Argus 2"></div>
-            <p class="text__legend">L’Argus 2</p>
-            <p class="text__paragraphe">D’autres objets permettent d’augmenter sa vue initiale. Les Google Glass en sont un exemple. Elles permettent d’avoir en réalité augmentée une surcouche de données à sa propre vue, dans son quotidien. Elles donnent par exemple le nom des restaurants à proximité, le nom des avenues etc... Elle nécessitent cependant d’être portées.</p>
+            <p class="text__legend leg2">L’Argus 2</p>
+            <p class="text__paragraphe">D’autres objets permettent d’augmenter sa vue initiale. <span class="text__bold">Les Google Glass</span> en sont un exemple. Elles permettent d’avoir en réalité augmentée une surcouche de données à sa propre vue, dans son quotidien. Elles donnent par exemple le nom des restaurants à proximité, le nom des avenues etc... Elle nécessitent cependant d’être portées.</p>
             <p class="text__paragraphe">Ce n’est pas le cas des lentilles bionique amovibles permettant le même effet à défaut de s’amputer un oeil pour le remplacer par un plus performant...</p>
             <h3 class="text__title">Les organes artificiels</h3>
             <p class="text__paragraphe">Les organes ont une fonction et sont en symbiose avec l’ensemble du corps humain. Il est difficile de les remplacer sans provoquer de rejets au même titre que les greffes. Plusieurs solutions sont cependant tentés :</p>
-            <p class="text__paragraphe">-Pancréas artificiels pour les personnes diabétiques et censés réguler le taux d’insuline.</p>
-            <div class="text__img">
+            <p class="text__paragraphe"><span class="text__bold">-Pancréas artificiels</span> pour les personnes diabétiques et censés réguler le taux d’insuline.</p>
+            <div class="text__img"
+            @mouseover="montrerLegende('leg3');"
+            @mouseleave="cacherLegende(), setTimeout('disparaitre()',200);">
                 <img src="public/img/A3_pancreas.webp" alt="Pancréas artificiel"></div>
-            <p class="text__legend">Pancréas artificiel</p>
-            <p class="text__paragraphe">-Vessies artificielles qui dans les faits existent depuis déjà un bon moment. Le seul problème restant est la sensation de vessie pleine qui permettrait de jauger quand uriner.</p>
-            <p class="text__paragraphe">Les grosses avancées sont du côté des reins. Les reins artificiels sont d’actualité. L’idée est de réduire le systeme de dialyse sous forme d’organe fonctionnel agissant comme un vrai rein. C’est à dire filtrant le sang et le nettoyant de toutes toxines. Le coup de maître est dans la conception en elle-même de ce rein : deux compartiments, un pour extraire les petites molécules et l’autre capable de renvoyer le sang avec de bons nutriments dans tout l’organisme.</p>
+            <p class="text__legend leg3">Pancréas artificiel</p>
+            <p class="text__paragraphe"><span>-Vessies artificielles</span> qui dans les faits existent depuis déjà un bon moment. Le seul problème restant est la sensation de vessie pleine qui permettrait de jauger quand uriner.</p>
+            <p class="text__paragraphe">Les grosses avancées sont du côté des reins. <span class="text__bold">Les reins artificiels</span> sont d’actualité. L’idée est de réduire le systeme de dialyse sous forme d’organe fonctionnel agissant comme un vrai rein. C’est à dire filtrant le sang et le nettoyant de toutes toxines. Le coup de maître est dans la conception en elle-même de ce rein : deux compartiments, un pour extraire les petites molécules et l’autre capable de renvoyer le sang avec de bons nutriments dans tout l’organisme.</p>
             <p class="text__paragraphe">Enormément d’améliorations sont désormais disponibles pour le corps humain. Certaines d’entre elles sont prête à l’utilisation et d’autres nécessitent d’être encore étudiées.</p>
         </div>
 
