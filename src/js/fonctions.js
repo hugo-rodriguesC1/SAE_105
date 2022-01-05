@@ -1,5 +1,5 @@
-function montrerLegende() {
-    let legend = document.querySelector('.text__legend');
+function montrerLegende(classe) {
+    let legend = document.querySelector('.'+classe);
     legend.style.display = 'block';
     return anime({
         targets: legend,
@@ -11,7 +11,7 @@ function montrerLegende() {
 }
 
 function cacherLegende() {
-    let legend = document.querySelector('.text__legend');
+    let legend = document.querySelectorAll('.text__legend');
     return anime({
         targets: legend,
         translateY: '-2.3625rem',
@@ -22,8 +22,10 @@ function cacherLegende() {
 }
 
 function disparaitre() {
-    let legend = document.querySelector('.text__legend');
-    legend.style.display = 'none'
+    let legend = document.querySelectorAll('.text__legend');
+    legend.forEach(function(leg,i) {
+        leg.style.display = 'none';
+    });
 }
 
 function carousel() {
