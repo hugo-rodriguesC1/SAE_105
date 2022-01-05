@@ -45,4 +45,8 @@ main {
     text-align: center;
     margin-right: auto;
     margin-left: auto;
+    position: absolute;
+    top: 17.5vh;
+    left: 0;
+    right: 0;
 }
